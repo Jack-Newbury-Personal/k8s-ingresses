@@ -9,6 +9,8 @@ spec:
     - host: grafana.jack-newbury.co.uk
       http:
         paths:
+          - path: /
+        pathType: Prefix
           - backend:
               serviceName: grafana
               servicePort: 80
