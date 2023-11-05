@@ -4,12 +4,7 @@ metadata:
   name: grafana-ingress
   annotations:
     kubernetes.io/ingress.class: ingress-nginx
-    cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
-  tls:
-    - hosts:
-        - grafana.jack-newbury.co.uk
-      secretName: grafana-jack-newbury-co-uk-tls
   rules:
     - host: grafana.jack-newbury.co.uk
       http:
