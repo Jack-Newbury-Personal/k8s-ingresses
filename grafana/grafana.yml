@@ -6,7 +6,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-    - host: jack-newbury.co.uk
+    - host: grafana.jack-newbury.co.uk
       http:
         paths:
           - path: /
